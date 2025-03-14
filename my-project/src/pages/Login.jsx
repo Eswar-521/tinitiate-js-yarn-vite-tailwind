@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[50vh] bg-white shadow-lg rounded-lg p-6 mx-4 md:w-1/3 md:mx-auto">
-      <h2 className="text-2xl font-bold mb-4 text-blue-600">Login</h2>
-      <input type="email" placeholder="Email" className="mb-2" />
-      <input type="password" placeholder="Password" className="mb-2" />
-      <button className="bg-blue-500 text-white w-full py-2 rounded mt-2 hover:bg-blue-700">
-        Login
-      </button>
+    <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
+      <h2 className="text-xl font-bold text-center">Login</h2>
+      <input type="email" placeholder="Email" className="w-full p-2 my-2 border rounded" />
+      <input type="password" placeholder="Password" className="w-full p-2 my-2 border rounded" />
+      <button className="w-full bg-blue-500 text-white py-2 rounded">Login</button>
+      <div className="text-center mt-2">
+        <Link to="/forgot-password" className="text-blue-600">Forgot Password?</Link>
+      </div>
     </div>
   );
 };
