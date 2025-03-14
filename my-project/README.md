@@ -1,8 +1,48 @@
-# React + Vite
+# Project Initialization
+- To set up a Js + yarn + Vite + Tailwind CSS project using Yarn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Create a vite Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+yarn create vite js-yarn-vite-tailwind
+```
+
+## Navigate into the project
+```sh
+cd js-yarn-vite-tailwind
+```
+
+## Install Dependencies
+```sh
+yarn
+```
+
+## Install Tailwind CSS
+```sh
+npm install tailwindcss @tailwindcss/vite
+```
+
+## Configure the Vite plugin
+- Add the @tailwindcss/vite plugin to your Vite configuration.
+```sh
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
+```
+
+## Import Tailwind Css
+- Add an @import to your CSS file that imports Tailwind CSS.
+
+```sh
+@import "tailwindcss";
+```
+
+## Start Your build process
+```sh
+npm run dev
+```
