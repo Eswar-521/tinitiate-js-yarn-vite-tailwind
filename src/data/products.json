@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 799.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "T-Shirt",
+      "category": "Clothing",
+      "price": 19.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Sofa",
+      "category": "Furniture",
+      "price": 499.99,
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
