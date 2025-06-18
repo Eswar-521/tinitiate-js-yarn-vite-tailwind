@@ -8,6 +8,7 @@ import RightSidebar from "./components/RightSidebar";
 import Home from "./pages/Home";
 import Home2 from "./pages/Home2";
 import Home3 from "./pages/Home3";
+import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home2" element={<Home2 />} />
             <Route path="/home3" element={<Home3 />} />
+            <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
