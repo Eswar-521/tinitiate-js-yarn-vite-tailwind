@@ -9,7 +9,11 @@ import Home from "./pages/Home";
 import Home2 from "./pages/Home2";
 import Home3 from "./pages/Home3";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import About1 from "./pages/About1";
+import About2 from "./pages/About2";
+import Service from "./pages/Service";
+import Service1 from "./pages/Service1";
+import Service2 from "./pages/Service2";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
@@ -32,7 +36,11 @@ function App() {
             <Route path="/home2" element={<Home2 />} />
             <Route path="/home3" element={<Home3 />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/about1" element={<About1 />} />
+            <Route path="/about2" element={<About2 />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/service1" element={<Service1/>}/>
+            <Route path="/Service2" element={<Service2/>}/>
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
