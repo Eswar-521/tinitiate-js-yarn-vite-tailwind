@@ -21,6 +21,25 @@ import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
 import Catalog from "./pages/Catalog";
 
+import Search from "./pages/Search";
+import Comparison from "./pages/Comparison";
+import ComparisonTable from "./pages/ComparisonTable";
+import Forms from "./pages/Forms";
+import DataTable from "./pages/DataTable";
+import Infographics from "./pages/Infographics";
+import Audio from "./pages/Audio";
+import Video from "./pages/Video";
+import Animation from "./pages/Animation";
+import DragDrop from "./pages/DragDrop";
+import Editor from "./pages/Editor";
+import ShoppingCart from "./pages/ShoppingCart";
+import Calendar from "./pages/Calendar";
+import Dashboard from "./pages/Dashboard";
+import Analytics from "./pages/Analytics";
+import Security from "./pages/Security";
+import Help from "./pages/Help";
+
+
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -47,6 +66,25 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/catalog" element={<Catalog searchQuery={searchQuery} />} />
+
+            <Route path="/search" element={<Search />} />
+              <Route path="/comparison" element={<Comparison />} />
+              <Route path="/comparisontable" element={<ComparisonTable />} />
+              <Route path="/forms" element={<Forms />} />
+              <Route path="/datatable" element={<DataTable />} />
+              <Route path="/infographics" element={<Infographics />} />
+              <Route path="/audio" element={<Audio />} />
+              <Route path="/video" element={<Video />} />
+              <Route path="/animation" element={<Animation />} />
+              <Route path="/dragdrop" element={<DragDrop />} />
+              <Route path="/editor" element={<Editor />} />
+              <Route path="/shoppingcart" element={<ShoppingCart />} />
+              <Route path="/calendar" element={<Calendar />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/analytics" element={<Analytics />} />
+              <Route path="/security" element={<Security />} />
+              <Route path="/help" element={<Help />} />
+              
           </Routes>
         </main>
         <RightSidebar />
